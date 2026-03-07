@@ -42,6 +42,8 @@ Then invoke any skill in Claude Code:
 | Skill | Status | Description |
 |---|---|---|
 | [message-market-fit](skills/message-market-fit/) | ✅ Available | Audit existing messaging assets against a specific ICP persona, score them across 5 pillars, generate 4 test variants, and run a 3-week multi-channel sprint with qualitative and quantitative signal in parallel. Produces a stakeholder-ready Messaging Specificity Report. |
+| [icp-definition](skills/icp-definition/) | 🚧 Draft | Build a layered ICP across 4 dimensions (firmographic, behavioral, psychographic, language), define the anti-ICP with disqualification signals and resource-drain indicators, and operationalize it with a signal map and activation checklist. Produces a stakeholder-ready ICP Profile Document. |
+| [positioning-audit](skills/positioning-audit/) | 🚧 Draft | Define and audit your positioning across 4 pillars (use case/category, audience, competitive alternative, differentiation), score positioning strength, flag positioning debt, and identify white space opportunities. Produces a stakeholder-ready Positioning Audit Report. |
 <!-- SKILLS:END -->
 
 ---
