@@ -109,6 +109,7 @@ Then invoke any skill in Claude Code:
 | [message-market-fit](skills/tier-2/message-market-fit/) | 2 | ✅ Available | Audit existing messaging assets against a specific ICP persona, score them across 5 pillars, generate 4 test variants, and run a 3-week multi-channel sprint with qualitative and quantitative signal in parallel. Produces a stakeholder-ready Messaging Specificity Report. |
 | [voc-synthesis](skills/tier-2/voc-synthesis/) | 2 | ✅ Available | Synthesize messy, multi-source VOC data (transcripts, surveys, reviews, CRM notes) into a structured Buyer Brain with frequency-weighted patterns, echo language bank, contradiction map, and evidence chains. Every claim traces to a real quote. Feeds directly into `/messaging-hierarchy`, `/positioning-audit`, and `/message-market-fit`. |
 | [competitive-landing-page](skills/tier-2/competitive-landing-page/) | 2 | ✅ Available | Generate production-ready "Your Product vs Competitor" landing pages for Google Ads. Collects product identity, competitive intelligence, and real review quotes (G2, Capterra, TrustRadius), then outputs a complete self-contained HTML page with 13 conversion-optimized sections. First page becomes the template; subsequent competitors take ~10 min. Includes [example output](skills/tier-2/competitive-landing-page/examples/pipelineos-vs-dealforce.html). |
+| [homepage-messaging](skills/tier-2/homepage-messaging/) | 2 | ✅ Available | Review a homepage structurally, block by block, against a fixed 4-layer rubric (hero, problem section, value propositions, whole page). Captures every block verbatim, scores each against a named criterion with pass/weak/fail and evidence, rewrites every failure, and separates the argument-order problems from the writing problems. Produces a side-by-side review and a build-ready change order with the blocking decisions surfaced up front. |
 | [launch-brief](skills/tier-3/launch-brief/) | 3 | ✅ Available | Turn a product spec into a full launch plan: scope and tier the launch, define the messaging hook, build a channel plan with sequencing, set success metrics, map stakeholders with RACI, and produce a phase-by-phase execution timeline. Produces a stakeholder-ready Launch Brief Document with a 60-second launch pitch. |
 | [battle-card](skills/tier-3/battle-card/) | 3 | ✅ Available | Build a one-page competitive battle card for sales — sourced from win/loss patterns, review data, and pricing intelligence. Includes positioning summary, "where we win / where we lose" with talk tracks, objection handling with verbatim responses, landmine questions for discovery, and a 90-second briefing. Every claim traces to evidence. |
 | [sales-narrative](skills/tier-3/sales-narrative/) | 3 | ✅ Available | Transform a pitch deck into a structured 7-beat story arc: the shift → the cost → the old way → the new way → the proof → the product → the ask. Audits existing pitches for structural failures (feature dump, buried lead, no villain), builds persona-adapted talk tracks, and produces a slide-by-slide narrative guide with a 60-second version. |
@@ -138,27 +139,28 @@ What's being built and in what order — ranked by the impact PMMs get from each
 | 4 | `message-market-fit` ✅ | Audit assets, score specificity, test variants, declare winner |
 | 5 | `voc-synthesis` ✅ | Synthesize multi-source VOC data into a frequency-weighted Buyer Brain with echo language, contradiction map, and evidence chains |
 | 6 | `competitive-landing-page` ✅ | Generate production-ready "vs Competitor" landing pages for Google Ads with real review quotes, feature comparisons, and conversion-optimized copy |
-| 7 | `competitor-teardown` | Analyze a competitor's full messaging posture: positioning, copy, pricing, review sentiment |
+| 7 | `homepage-messaging` ✅ | Review a homepage block by block against a fixed rubric, separate the order problems from the writing problems, and emit a build-ready change order |
+| 8 | `competitor-teardown` | Analyze a competitor's full messaging posture: positioning, copy, pricing, review sentiment |
 
 ### Tier 3 — Activate Across GTM
 *Take the messaging system and deploy it where it creates revenue.*
 
 | # | Skill | What it does |
 |---|---|---|
-| 8 | `launch-brief` ✅ | Full launch document: audience, hook, channel plan, success metrics, stakeholder alignment |
-| 9 | `battle-card` ✅ | One-page competitive battle card for sales — built from win/loss patterns, not opinions |
-| 10 | `sales-narrative` ✅ | Transform a pitch deck into a 7-beat story arc: shift → cost → old way → new way → proof → product → ask |
-| 11 | `feature-announcement` ✅ | Turn release notes into a multi-channel announcement package that creates demand, not just awareness |
+| 9 | `launch-brief` ✅ | Full launch document: audience, hook, channel plan, success metrics, stakeholder alignment |
+| 10 | `battle-card` ✅ | One-page competitive battle card for sales — built from win/loss patterns, not opinions |
+| 11 | `sales-narrative` ✅ | Transform a pitch deck into a 7-beat story arc: shift → cost → old way → new way → proof → product → ask |
+| 12 | `feature-announcement` ✅ | Turn release notes into a multi-channel announcement package that creates demand, not just awareness |
 
 ### Tier 4 — Close the Loop
 *Feed real-world signal back into the messaging system.*
 
 | # | Skill | What it does |
 |---|---|---|
-| 12 | `win-loss-analysis` | Extract patterns from win/loss interviews into messaging implications and positioning adjustments |
-| 13 | `objection-handler` | Map common objections to specific messaging responses with proof points and talk tracks |
-| 14 | `case-study-framework` | Structure a customer case study using the same messaging pillars as your GTM — so it compounds |
-| 15 | `executive-briefing` | Turn market data and messaging results into a tight, revenue-tied narrative for leadership |
+| 13 | `win-loss-analysis` | Extract patterns from win/loss interviews into messaging implications and positioning adjustments |
+| 14 | `objection-handler` | Map common objections to specific messaging responses with proof points and talk tracks |
+| 15 | `case-study-framework` | Structure a customer case study using the same messaging pillars as your GTM — so it compounds |
+| 16 | `executive-briefing` | Turn market data and messaging results into a tight, revenue-tied narrative for leadership |
 
 ---
 
@@ -207,9 +209,9 @@ Want to contribute a skill or improve an existing one? See [CONTRIBUTING.md](CON
 
 ## About
 
-Built by [Gab Bujold](https://www.linkedin.com/in/gabriel-bujold/), product marketing consultant and creator of the [Employee Zero newsletter](https://newsletter.pressxtomarket.com?ref=pmm-skillset).
+Built by [Gab Bujold](https://www.linkedin.com/in/gabriel-bujold/), product marketer and creator of the [Employee Zero newsletter](https://newsletter.pressxtomarket.com?ref=pmm-skillset).
 
-Gab has worked with 30+ B2B SaaS startups on positioning and messaging, surveyed 65+ PMMs on their testing processes, and built the message testing system these skills are based on.
+Gab has worked with 40+ B2B SaaS startups on positioning and messaging, surveyed 65+ PMMs on their testing processes, and built the message testing system these skills are based on.
 
 Questions, feedback, or want to contribute a skill? [Open an issue](https://github.com/Fearofsnakes/pmm-skillset/issues) or reach out on [LinkedIn](https://www.linkedin.com/in/gabriel-bujold/).
 
